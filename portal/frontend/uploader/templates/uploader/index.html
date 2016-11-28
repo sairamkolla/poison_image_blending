@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>Mini Ajax File Upload Form</title>
+
+		<!-- Google web fonts -->
+		<link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel='stylesheet' />
+
+		<!-- The main CSS file -->
+
+		<link href="/static/uploader/assets/css/style.css" rel="stylesheet" />
+
+		<!-- Bootstrap -->
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+	</head>
+
+	<body>
+		<div id="main-container">
+		<div class="upload" >
+			<div class="drop">
+				<p>Source Image</p>
+				<div style="width:100%;height:100%;position:relative;padding:0px;">
+					<div style="width:100%;height:100%" id="abc1"></div>
+					<div style="border: 1px solid white;position:absolute;top:0px;left:0px;" id="canvas1"></div>
+				</div>
+			</div>
+			<div class="drop-footer">
+				<span id="x1">
+					<a>Browse</a>
+				</span>
+				<!--<input type="submit" name="submit" >-->
+
+			</div>
+
+<input type="hidden" id="data2" name="data2" />
+
+		</div>
+			<div style="display:inline-block;">
+				<button style="border-radius: 50% !important;margin:50% 100px" class="btn btn-lg btn-success btn-circle"><i class="fa fa-refresh"></i></button>
+			</div>
+			<div class="upload" >
+				<div class="drop">
+					<p>Target Image</p>
+					<div style="width:100%;height:100%" id="abc2"></div>
+				</div>
+				<div class="drop-footer">
+					<span id="x2">
+						<a>Browse</a>
+					</span>
+				<!--<input type="submit" name="submit" >-->
+
+				</div>
+
+			</div>
+
+
+
+		<input type="file" style="display:none" name="upl" id="inputfile1"/>
+		<input type="file" style="display:none" name="upl" id="inputfile2"/>
+
+		</div>
+		<!--<footer>
+                    <h4 style="text-align:center"> Developed by by SairamKolla & Mohammed Sharfuddin </h4>
+		</footer>-->
+        
+		<!-- JavaScript Includes -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="/static/uploader/assets/js/jquery.uploadPreview.js"></script>
+
+		<!-- Our main JS file -->
+		<script src="/static/uploader/assets/js/script.js"></script>
+		<!--
+		<script type="text/javascript" src="/static/uploader/assets/js/raphael.min.js"></script>
+		<script type="text/javascript" src="/static/uploader/assets/js/json2.js"></script>
+		<script type="text/javascript" src="/static/uploader/assets/js/raphael.sketchpad.js"></script>
+		-->
+
+
+	</body>
+</html>
