@@ -1,8 +1,11 @@
 clear all;
 close all;
 %% Inputs 
-background_img = imread('images/text.jpg');
-border_img = imread('images/wall.jpg');
+
+background_img = imread('images/shark.jpg');
+border_img = imread('images/waves.jpeg');
+background_img = imread('images/kolla.jpg');
+border_img = imread('images/obama.jpg');
 %background_img = imresize(background_img,0.5);
 % border_img = imresize(border_img,0.5);
 [m, n, x] = size(background_img);

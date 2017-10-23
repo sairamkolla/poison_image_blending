@@ -72,7 +72,7 @@ if __name__ == "__main__":
                 else:
                     for chnl in range(0,3):
                         B[indices[y, x], chnl] = B[indices[y, x], chnl] +  (border_img[y - 1, x, chnl])
-                        print indices[y,x],"  ",border_img[y - 1, x, chnl]
+                        #print indices[y,x],"  ",border_img[y - 1, x, chnl]
                 '''left boundary'''
                 if mask[y, x - 1] == 1:
                     Coeff_matr[indices[y, x], indices[y, x - 1]] = -1
@@ -80,7 +80,7 @@ if __name__ == "__main__":
                 else:
                     for chnl in range(0,3):
                         B[indices[y, x], chnl] = B[indices[y, x], chnl] +  (border_img[y, x - 1, chnl])
-                        print indices[y, x], "  ", border_img[y , x-1, chnl]
+                        #print indices[y, x], "  ", border_img[y , x-1, chnl]
                 ''' bottom boundary '''
                 if mask[y + 1, x] == 1:
                     Coeff_matr[indices[y, x], indices[y + 1, x]] = -1
@@ -88,7 +88,7 @@ if __name__ == "__main__":
                 else:
                     for chnl in range(0,3):
                         B[indices[y, x], chnl] = B[indices[y, x], chnl] +  (border_img[y + 1, x, chnl])
-                        print indices[y, x], "  ", border_img[y + 1, x, chnl]
+                        #print indices[y, x], "  ", border_img[y + 1, x, chnl]
                 ''' right boundary '''
                 if mask[y, x + 1] == 1:
                     Coeff_matr[indices[y, x], indices[y, x + 1]] = -1
@@ -96,7 +96,7 @@ if __name__ == "__main__":
                 else:
                     for chnl in range(0,3):
                         B[indices[y, x], chnl] = B[indices[y, x], chnl] +  (border_img[y, x + 1, chnl])
-                        print indices[y, x], "  ", border_img[y, x + 1, chnl]
+                        #print indices[y, x], "  ", border_img[y, x + 1, chnl]
                 for chnl in range(0,3):
                     B[indices[y, x], chnl] = B[indices[y, x], chnl] + grad_img[y, x, chnl]
                 Coeff_matr[indices[y, x], indices[y, x]] = 4
